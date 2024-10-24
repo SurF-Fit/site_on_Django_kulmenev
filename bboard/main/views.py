@@ -43,7 +43,7 @@ class BBLogoutView(LoginRequiredMixin, LogoutView):
     template_name = 'main/logout.html'
 
 class ChangeUserInfoView(SuccessMessageMixin, LoginRequiredMixin,
-UpdateView):
+                         UpdateView):
     model = AdvUser
     template_name = 'main/change_user_info.html'
     form_class = ChangeUserInfoForm
